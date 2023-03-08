@@ -6,7 +6,7 @@
 
 **Graphic Design:** Joona
 
-**TBA:** Luca, Jeppe, Vilma
+**TBD:** Luca, Jeppe, Vilma
 
 ## Vaatimukset/idea
 
