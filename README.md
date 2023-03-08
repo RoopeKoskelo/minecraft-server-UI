@@ -34,5 +34,9 @@ Vaaditut välilehdet:
     - Gamerules
     - Muita helppoja staattisia komentoja
     - Configien muokkaus, (cfg, yml. . .)
+    
+    ## Graafinen Ohjeisto
+    
+    Figma linkki: https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0
 
 
