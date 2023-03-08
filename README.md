@@ -12,6 +12,7 @@
 
 Ideana olisi tehä käyttöliittymä minecraft-serverille, josta voi käynnistää ja sammuttaa serverin, muokata configeja ja käyttää console terminaalia.
 Käytetään Reactia, mahdollisesti erillisenä sovelluksena eikä vain nettisivuna.
+Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/getting-started/overview/)
 
 ## User Interface
 
