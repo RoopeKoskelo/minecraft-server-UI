@@ -15,6 +15,8 @@ Käytetään Reactia, mahdollisesti erillisenä sovelluksena eikä vain nettisiv
 
 ## User Interface
 
+(vaiheessa)
+
 Vaaditut välilehdet:
 
 - Profiilit
