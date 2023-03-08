@@ -4,6 +4,6 @@
 
 **Scrum Masterit:** Sisu, Roope
 
-**Graphic Design:** Joona, Vilma
+**Graphic Design:** Joona
 
-**TBD:** Luca, Jeppe
+**TBD:** Luca, Jeppe, Vilma
