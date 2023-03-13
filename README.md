@@ -84,10 +84,10 @@ Vasen sarake on asetus jota muokataan, oikea sarake on muutettava kenttä
 
 ## Julkiset tunnukset
 
-Aternos.org
-POGOY_
-salpauskala1234
+site: Aternos.org
+user: POGOY_
+ssd: salpauskala1234
 
-Minehut.com
-e1337junkthirst@outlook.com
-Salpauskala1234
+site: Minehut.com
+user: e1337junkthirst@outlook.com
+ssd: Salpauskala1234
