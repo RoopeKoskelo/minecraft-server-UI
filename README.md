@@ -1,6 +1,6 @@
 # MineservuPOGOY
 
-<details><summary>ROOLIT📋</summary>
+<details><summary>Roolit📋</summary>
 <p>
 
 #### Tiimin roolit
@@ -15,13 +15,15 @@
 </p>
 </details>
 
-## Vaatimukset/idea
+<details><summary>Vaatimukset/idea ✔💡</summary>
+<p>
 
 Ideana olisi tehä käyttöliittymä minecraft-serverille, josta voi käynnistää ja sammuttaa serverin, muokata configeja ja käyttää console terminaalia.
 Käytetään Reactia, mahdollisesti erillisenä sovelluksena eikä vain nettisivuna.
 
 Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/getting-started/overview/)
-
+</p>
+</details>
 ## User Interface
 
 (vaiheessa)
@@ -29,7 +31,7 @@ Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/ge
 Vaaditut välilehdet:
 
 - Profiilit
-@@ -37,7 +42,7 @@ Vaaditut välilehdet:
+    -  Vaaditut välilehdet:
 - Peli asetukset
     - Gamerules
     - Muita helppoja staattisia komentoja
@@ -38,7 +40,7 @@ Vaaditut välilehdet:
 
     ## Graafinen Ohjeisto
 
-@@ -54,21 +59,3 @@ Projektin cloonauksen jälkeen. . .
+ Projektin cloonauksen jälkeen. . .
 2. npm install
 
 3. npm start
