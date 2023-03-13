@@ -60,6 +60,8 @@ Projektin cloonauksen jälkeen. . .
 
 3. npm start
 
+MUISTA KÄYTTÄÄ OMAA BRANCHIA!
+
 ## /server-files/
 
 Väliaikaisesti kansioon on asetettu b1.7.3 versio minecraft, joka on tarpeeksi kevyt lokaaliseen testaukseen. Käytössä on craftbukkit server, jossa on enemmän configeja kuin vanillassa joita löytyy myös nyky versioissa joilla voimme testata.
