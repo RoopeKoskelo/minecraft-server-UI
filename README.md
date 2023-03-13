@@ -41,4 +41,14 @@ Vaaditut välilehdet:
     
     Figma linkki: [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
 
+##
 
+Ohjeet kehitykseen
+
+Projektin cloonauksen jälkeen. . .
+
+1. git fetch
+
+2. npm install
+
+3. npm start
