@@ -72,6 +72,8 @@ Tiedostot kuten `server.properties`, `start.bat`, `bukkit.yml` pitäisivät olla
 
 Esimerkki server.properties pöytä mallissa.
 
+Vasen sarake on asetus jota muokataan, oikea sarake on muutettava kenttä
+
 | Asetukset | server.properties |
 | --- | --- |
 | level-name | world |
