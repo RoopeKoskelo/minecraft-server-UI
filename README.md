@@ -24,6 +24,7 @@ Käytetään Reactia, mahdollisesti erillisenä sovelluksena eikä vain nettisiv
 Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/getting-started/overview/)
 </p>
 </details>
+
 ## User Interface
 
 (vaiheessa)
@@ -31,16 +32,30 @@ Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/ge
 Vaaditut välilehdet:
 
 - Profiilit
-    -  Vaaditut välilehdet:
-- Peli asetukset
-    - Gamerules
-    - Muita helppoja staattisia komentoja
-    - Configien muokkaus, (~~cfg~~, yml, properties. . .)
-    - Configien muokkaus, (cfg, yml. . .)
+    - Vaihda palvelimien välillä
 
-    ## Graafinen Ohjeisto
+- Etusivu
+    - Käynnistys & sammutus, pilvitallennus
+    - Terminaali
 
- Projektin cloonauksen jälkeen. . .
+- Systeemi asetukset
+    - RAM
+    - Peliversio
+    - . . .
+    - Plugins & modaus?
+
+## Graafinen Ohjeisto
+
+    Figma linkki: 
+    
+    [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
+
+## Ohjeet kehitykseen
+
+Projektin cloonauksen jälkeen. . .
+
+1. git fetch
+
 2. npm install
 
 3. npm start
