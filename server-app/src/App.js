@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import ButtonAppBar from './components/Topbar';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import StartButton from './components/StartButton';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             justifyContent: 'space-evenly',
             alignItems: 'center'
           }}>
-            <Button variant='contained' size= "large" color="secondary">Start Server</Button>
+            <StartButton/>
           </Box>
         </Grid>
       </Grid>
