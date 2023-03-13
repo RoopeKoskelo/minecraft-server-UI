@@ -37,6 +37,9 @@ Vaaditut välilehdet:
 - Etusivu
     - Käynnistys & sammutus, pilvitallennus
     - Terminaali
+    
+- Serverin asetukset
+    - pelaajalista
 
 - Systeemi asetukset
     - RAM
