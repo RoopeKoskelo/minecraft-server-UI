@@ -81,3 +81,13 @@ Vasen sarake on asetus jota muokataan, oikea sarake on muutettava kenttä
 | view-distance | 10 |
 | spawn-monsters | true |
 | . . . | . . . |
+
+## Julkiset tunnukset
+
+Aternos.org
+POGOY_
+salpauskala1234
+
+Minehut.com
+e1337junkthirst@outlook.com
+Salpauskala1234
