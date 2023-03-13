@@ -37,7 +37,7 @@ Vaaditut välilehdet:
 - Peli asetukset
     - Gamerules
     - Muita helppoja staattisia komentoja
-    - Configien muokkaus, (cfg, yml. . .)
+    - Configien muokkaus, (cfg, yml, properties. . .)
     
     ## Graafinen Ohjeisto
     
@@ -54,3 +54,9 @@ Projektin cloonauksen jälkeen. . .
 2. npm install
 
 3. npm start
+
+## /server-files/
+
+Väliaikaisesti kansioon on asetettu b1.7.3 versio minecraft, joka on tarpeeksi kevyt lokaaliseen testaukseen. Käytössä on craftbukkit server, jossa on enemmän configeja kuin vanillassa joilla voimme testata. Muuten toimii samoin kuin uudetkin versiot.
+
+Palvelinta ei ole muokattu muuten kuin .properties asetuksista `online-mode=false`, jotta sinne voi mahdollisesti yhdistää.
