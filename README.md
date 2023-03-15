@@ -25,7 +25,8 @@ Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/ge
 </p>
 </details>
 
-## User Interface
+<details><summary>User Interface 🖥</summary>
+<p>## User Interface
 
 (vaiheessa)
 
@@ -43,6 +44,9 @@ Vaaditut välilehdet:
     - Peliversio
     - . . .
     - Plugins & modaus?
+    
+</p>
+</details>
 
 ## Graafinen Ohjeisto
 
