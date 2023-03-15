@@ -57,7 +57,18 @@ Vaaditut välilehdet:
 
 </p>
 </details>
+<details><summary> Julkiset tunnukset</summary>
+<p>
 
+- Site: aternos.org
+    - User: POGOY_
+    - Password: salpauskala1234
+
+- Site: minehut.com
+    - User: e1337junkthirst@outlook.com
+    - Password: Salpauskala1234
+    </p>
+    </details>
 ## Graafinen Ohjeisto
  Figma linkki: 
  [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
@@ -94,13 +105,5 @@ Vasen sarake on asetus jota muokataan, oikea sarake on muutettava kenttä
 | spawn-monsters | true |
 | . . . | . . . |
 
-## Julkiset tunnukset
 
-- Site: aternos.org
-    - User: POGOY_
-    - Password: salpauskala1234
-
-- Site: minehut.com
-    - User: e1337junkthirst@outlook.com
-    - Password: Salpauskala1234
 
