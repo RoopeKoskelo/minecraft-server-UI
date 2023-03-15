@@ -74,12 +74,12 @@ Vaaditut välilehdet:
  Figma linkki: 
  [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
  
-        kuva graaffisesta ohjeistosta default teemasta
+kuva graaffisesta ohjeistosta default teemasta
  
  
  
         
-        <img width="203" alt="yeb" src="https://user-images.githubusercontent.com/113332670/225261246-3caf4db3-bd04-464a-a8fc-86ce6125e523.png">
+<img width="203" alt="yeb" src="https://user-images.githubusercontent.com/113332670/225261246-3caf4db3-bd04-464a-a8fc-86ce6125e523.png">
     </p>
     </details>
 
