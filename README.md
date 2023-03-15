@@ -57,7 +57,7 @@ Vaaditut välilehdet:
 
 </p>
 </details>
-<details><summary> Julkiset tunnukset</summary>
+<details><summary> Julkiset tunnukset👤</summary>
 <p>
 
 - Site: aternos.org
