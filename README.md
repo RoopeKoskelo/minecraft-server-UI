@@ -35,14 +35,27 @@ Vaaditut välilehdet:
     - Vaihda palvelimien välillä
 
 - Etusivu
+    - Plavelimen nimi, IP
     - Käynnistys & sammutus, pilvitallennus
     - Terminaali
 
+- Peli asetukset
+    - Configien muokkaus, (~~cfg~~, yml, properties. . .)
+    - Gamerulet
+
+- Software asetukset
+    - Peliversio
+    - Server editio, (vanilla, paper, forge. . .)
+    - Plugins & modaus?
+
+- Tiedostot
+    - Näkymä servun kansiosta
+
 - Systeemi asetukset
     - RAM
-    - Peliversio
-    - . . .
-    - Plugins & modaus?
+    - Verkko asetukset
+        - (tästä voi tulla haaste myöhemmin)
+
 
 ## Graafinen Ohjeisto
 
