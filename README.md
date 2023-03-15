@@ -26,7 +26,7 @@ Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/ge
 </details>
 
 <details><summary>User Interface 🖥</summary>
-<p>## User Interface
+<p>
 
 (vaiheessa)
 
