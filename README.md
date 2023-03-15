@@ -28,8 +28,6 @@ Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/ge
 <details><summary>User Interface 🖥</summary>
 <p>
 
-(vaiheessa)
-
 Vaaditut välilehdet:
 
 - Profiilit
