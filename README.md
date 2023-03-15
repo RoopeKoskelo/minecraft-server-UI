@@ -49,10 +49,8 @@ Vaaditut välilehdet:
 </details>
 
 ## Graafinen Ohjeisto
-
-    Figma linkki: 
-    
-    [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
+ Figma linkki: 
+ [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
 
 ## Ohjeet kehitykseen
 
