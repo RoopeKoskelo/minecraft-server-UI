@@ -25,7 +25,8 @@ Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/ge
 </p>
 </details>
 
-## User Interface
+<details><summary>User Interface 🖥</summary>
+<p>
 
 (vaiheessa)
 
@@ -56,12 +57,12 @@ Vaaditut välilehdet:
     - Verkko asetukset
         - (tästä voi tulla haaste myöhemmin)
 
+</p>
+</details>
 
 ## Graafinen Ohjeisto
-
-    Figma linkki: 
-    
-    [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
+ Figma linkki: 
+ [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
 
 ## Ohjeet kehitykseen
 
