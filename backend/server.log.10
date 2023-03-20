@@ -1,0 +1,6 @@
+2023-03-20 22:12:39 [INFO] Starting minecraft server version Beta 1.7.3
+2023-03-20 22:12:39 [INFO] Loading properties
+2023-03-20 22:12:39 [INFO] Starting Minecraft server on *:25565
+2023-03-20 22:12:39 [WARNING] **** FAILED TO BIND TO PORT!
+2023-03-20 22:12:39 [WARNING] The exception was: java.net.BindException: Address already in use: JVM_Bind
+2023-03-20 22:12:39 [WARNING] Perhaps a server is already running on that port?

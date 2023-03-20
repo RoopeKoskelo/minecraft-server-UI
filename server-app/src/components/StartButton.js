@@ -9,6 +9,23 @@ export default function StartButton() {
     const startServer = async (event) => {
         console.log("starting server...")
         event.preventDefault()
+        startstate = true
+        console.log(startstate)
+        const data = await fetch('http://localhost:8000/start',{
+            method:'POST',
+            headers:{
+                'accept': 'application/json, text/plain, */*',
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify({startstate})
+        })
+        console.log(data)
+    }
+
+    const exitServer = async (event) => {
+        console.log("starting server...")
+        event.preventDefault()
+        startstate = false
         console.log(startstate)
         const data = await fetch('http://localhost:8000/start',{
             method:'POST',
@@ -26,6 +43,9 @@ export default function StartButton() {
     <Box display='flex'>
         <Button variant='contained' size= "large" color="secondary" onClick={startServer}>
             Start Server
+        </Button>
+        <Button variant='contained' size= "large" color="secondary" onClick={exitServer}>
+            Shutdown Server
         </Button>
         <h2></h2>
     </Box>
