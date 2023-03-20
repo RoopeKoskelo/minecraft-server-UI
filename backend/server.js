@@ -11,24 +11,29 @@ app.get('/message', (req, res) => {
 
 //start server nappi
 app.post('/start', async (req, res) => {
-    const { spawn } = require('child_process');
-    const bat = spawn('cmd.exe', ['/c', 'C:\\Users\\Oppilas1\\Desktop\\VS kamat\\MineservuPOGOY\\backend\\start.bat']);
     let startdata = req.body.startstate
 
     console.log(startdata)
     res.send("startdata")
 
-    bat.stdout.on('data', (data) => {
-        console.log('data is : '+data.toString());
-    });
-  
-    bat.stderr.on('data', (data) => {
-        console.error('error is : '+data.toString());
-    });
-  
-    bat.on('exit', (code) => {
-        console.log(`Child exited with code ${code}`);
-    });
+    if(startdata = true){
+        const { spawn } = require('child_process');
+        const bat = spawn('cmd.exe', ['/c', 'C:\\Users\\Oppilas1\\Desktop\\VS kamat\\MineservuPOGOY\\backend\\start.bat']);
+        bat.stdout.on('data', (data) => {
+            console.log('data is : '+data.toString());
+        });
+      
+        bat.stderr.on('data', (data) => {
+            console.error('error is : '+data.toString());
+        });
+      
+        bat.on('exit', (code) => {
+            console.log(`Child exited with code ${code}`);
+        });
+    }else if(startdata = false){
+        console.log("sulkee")
+        return;
+    }
 });
 
 app.listen(8000, () => {

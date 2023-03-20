@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 
 export default function StartButton() {
     let [startstate, setStartstate] = useState(false);
-    startstate = true
+    
 
     const startServer = async (event) => {
         console.log("starting server...")

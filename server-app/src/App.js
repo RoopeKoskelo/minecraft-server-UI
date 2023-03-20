@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import ButtonAppBar from './components/Topbar';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import StartButton from './components/StartButton';
+import StartSwitch from './components/StartSwitch';
 
 function App() {
   const [message, setMessage] = useState("");
@@ -30,7 +30,7 @@ function App() {
             alignItems: 'center'
           }}>
             <h1>{message}</h1>
-            <StartButton/>
+            <StartSwitch/>
           </Box>
         </Grid>
       </Grid>
