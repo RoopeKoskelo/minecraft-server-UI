@@ -40,6 +40,8 @@ app.post('/start', async (req, res) => {
         });
     }
     else if(startdata === false){
+        bat.stdin.write("stop");
+        bat.stdin.end();
         
         return;
     }
