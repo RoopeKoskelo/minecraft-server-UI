@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material';
+import { colors, createTheme } from '@mui/material';
 
 const theme = createTheme({
     typography: {
@@ -12,6 +12,9 @@ const theme = createTheme({
       secondary: {
         main: '#F5F5F5',
       },
+      info: {
+        main: '#FFFFFF'
+      }
     },
   });
 
