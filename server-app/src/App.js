@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Grid from '@mui/material/Grid';
-import ButtonAppBar from './components/Topbar';
+import ButtonSidebar from './components/Sidebar';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Box>
-        <ButtonAppBar/>
+        <ButtonSidebar/>
       </Box>
       <Grid className="App">
         <Grid>
