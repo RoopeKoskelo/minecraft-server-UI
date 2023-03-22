@@ -36,13 +36,13 @@ app.post('/start', async (req, res) => {
 
     if(startdata === true){   
         bat.stderr.on('data', (data) => {
-            console.error('error is : '+data.toString());
+            console.error('log : '+data.toString());
         });
     }
     else if(startdata === false){
         bat.stdin.write("stop");
-        bat.stdin.end();
-        
+        bat.kill
+        console.log("sulkee...")
         return;
     }
 });
