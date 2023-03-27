@@ -1,12 +1,9 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Grid from '@mui/material/Grid';
-import ButtonSidebar from './components/Sidebar';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import StartSwitch from './components/StartSwitch';
-import StartButton from './components/StartButton';
+import Home from './pages/Home';
+import Layout from './pages/Layout';
+import Settings from './pages/Settings';
 
 function App() {
   const [message, setMessage] = useState("");
@@ -18,7 +15,22 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />}/>
+          <Route path="settings" element={<Settings />}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
+
+/* BACKUP JOS KUSEE :))
+<div className="App">
       <Box>
         <ButtonSidebar/>
       </Box>
@@ -37,6 +49,4 @@ function App() {
       </Grid>
     </div>
   );
-}
-
-export default App;
+  */

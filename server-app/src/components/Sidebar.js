@@ -12,9 +12,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import {ThemeProvider} from '@mui/material';
 import theme from'../theme'
+import {BrowserRouter, Route, Link} from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -51,16 +51,22 @@ export default function Sidebar() {
           </Toolbar>
           <Divider />
           <List>
-            {['Server', 'Options', 'Console', '---'].map((text, index) => (
-              <ListItem key={text} disablePadding>
-                <ListItemButton>
+              <ListItem disablePadding>
+                <ListItemButton to="/">
                   <ListItemIcon>
-                    {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                    <InboxIcon/><ListItemText>Server Home</ListItemText>
                   </ListItemIcon>
-                  <ListItemText primary={text} />
+                  <ListItemText/>
                 </ListItemButton>
               </ListItem>
-            ))}
+              <ListItem disablePadding>
+                <ListItemButton to="/Settings">
+                  <ListItemIcon>
+                    <InboxIcon/><ListItemText>Server Settings</ListItemText>
+                  </ListItemIcon>
+                  <ListItemText/>
+                </ListItemButton>
+              </ListItem>
           </List>
         </Drawer>
       </Box>
