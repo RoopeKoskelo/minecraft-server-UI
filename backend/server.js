@@ -28,7 +28,7 @@ function startServerCMD(){
 
 app.post('/start', async (req, res) => {
     let startdata = await req.body.startstate
-    const { spawn, ChildProcess } = require('child_process');
+    const { spawn, ChildProcess, subprocess } = require('child_process');
     const bat = spawn('cmd.exe', ['/c', 'start.bat']);
 
     console.log(startdata)
@@ -40,8 +40,7 @@ app.post('/start', async (req, res) => {
         });
     }
     else if(startdata === false){
-        bat.stdin.write("stop");
-        bat.kill
+        bat.stdin.exit()
         console.log("sulkee...")
         return;
     }
