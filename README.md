@@ -26,6 +26,8 @@ Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/ge
 
 Backendissä myös Express ja CORS.
 
+Hyvä parser server-propertiesiin: [linkki](https://www.npmjs.com/package/properties-parser)
+
 
 <details><summary>User Interface 🖥</summary>
 <p>

@@ -10,42 +10,61 @@ app.get('/message', (req, res) => {
 
 //start server nappi
 
-function startServerCMD(){
-    const { spawn, ChildProcess } = require('child_process');
-    const bat = spawn('cmd.exe', ['/c', 'start.bat']);
-    bat.stdout.on('data', (data) => {
-        console.log('data is : '+data.toString());
-    });
-    
-    bat.stderr.on('data', (data) => {
-        console.error('error is : '+data.toString());
-    });
-    
-    bat.on('exit', (code) => {
-        console.log(`Child exited with code ${code}`);
-    });
-}
-
 app.post('/start', async (req, res) => {
     let startdata = await req.body.startstate
     const { spawn, ChildProcess, subprocess } = require('child_process');
-    const bat = spawn('cmd.exe', ['/c', 'start.bat']);
+    const minecraftProcess = spawn('java', [
+        '-jar',
+        '-Xmx1024m',
+        '-Xms1024m',
+        'craftbukkit-1060-b1.7.3.jar'
+    ], { detached: true });
 
     console.log(startdata)
     res.send("startdata")
 
-    if(startdata === true){   
-        bat.stderr.on('data', (data) => {
-            console.error('log : '+data.toString());
-        });
+    if(startdata === true){
+        function log(data){
+            process.stdout.write(data.toString());
+        }
+        
+        minecraftProcess.stdout.on('data', log);
+        minecraftProcess.stderr.on('data', log);
+
     }
     else if(startdata === false){
-        bat.stdin.exit()
-        console.log("sulkee...")
+        process.kill(-minecraftProcess.pid)
+        console.log("vittusaatana");
         return;
     }
 });
 
+// server.properties handlaaminen (dear god)
+
+app.post('/settings', async (req, res) => {
+
+    const propertiesparser = require("properties-parser")
+    
+    function parseProperties(){
+        
+        propertiesparser.read('../backend/server.properties', function(error, data){
+            console.log(data);
+        })
+    }
+    
+
+    let check = await req.body.check
+
+    if(check === true){
+        parseProperties();
+    }
+
+})
+
 app.listen(8000, () => {
     console.log(`Server is running on port 8000.`);
+});
+
+process.on('exit', function(){
+    minecraftProcess.kill();
 });
