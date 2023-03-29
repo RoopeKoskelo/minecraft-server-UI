@@ -2,12 +2,12 @@ import { React, useState, useEffect } from 'react';
 import { Grid, Box } from '@mui/material';
 
 export default function Home() {
-    const [message, setMessage] = useState("");
+    const [messages, setMessages] = useState([]);
 
     function loadData() {
-        fetch("http://localhost:8000/message")
+        fetch("http://localhost:8000/logs")
         .then((res) => res.json())
-        .then((data) => setMessage(data.message));
+        .then((data) => setMessages(data.messages));
     }
 
     useEffect(() => {
@@ -27,7 +27,11 @@ export default function Home() {
                         alignItems: 'center',
                         ml: '240px'
                     }}>
-                        <h1>{message}</h1>
+                        {
+                            messages.map((item) => {
+                                return <p>{item}</p>
+                            })
+                        }
                     </Box>
                 </Grid>
             </Grid>
