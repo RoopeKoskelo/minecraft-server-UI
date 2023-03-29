@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import StartButton from '../components/StartButton';
-import { Grid, Box } from '@mui/material';
+import { Grid, Box, Typography } from '@mui/material';
 
 export default function Home() {
     const [message, setMessage] = useState("");
@@ -15,6 +15,7 @@ export default function Home() {
         <div>
             <Grid className="App">
                 <Grid>
+                    <Typography variant='header'>Dashboard & Server Info</Typography>
                     <Box sx={{
                         display: 'flex',
                         height: 500,

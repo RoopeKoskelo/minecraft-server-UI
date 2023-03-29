@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Home from './pages/Home';
 import Layout from './pages/Layout';
-import Settings from './pages/Settings';
+import Settings from './pages/Settings'
 
 function App() {
-  const [message, setMessage] = useState("");
+  const [ setMessage ] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:8000/message")

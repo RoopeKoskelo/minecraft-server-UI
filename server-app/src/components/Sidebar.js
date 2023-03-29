@@ -15,7 +15,6 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import {ThemeProvider} from '@mui/material';
 import theme from'../theme'
 import styled from '@emotion/styled';
-import {BrowserRouter, Route, Link} from "react-router-dom";
 
 const drawerWidth = 240;
 //Ei voi käyttää muuttujana FooterToolbaarissa, joten hardcoded siel

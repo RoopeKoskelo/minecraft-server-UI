@@ -8,6 +8,9 @@ const theme = createTheme({
       h1: {
         color: 'white',
         fontSize: '10'
+      },
+      header: {
+        textDecoration
       }
     },
     palette: {
