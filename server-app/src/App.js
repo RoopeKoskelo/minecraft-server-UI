@@ -1,38 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from 'react';
+import logo from './logo.svg';
 import './App.css';
-import Home from './pages/Home';
-import Layout from './pages/Layout';
-import Settings from './pages/Settings';
+import Grid from '@mui/material/Grid';
+import ButtonAppBar from './components/Topbar';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 
 function App() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    fetch("http://localhost:8000/message")
-      .then((res) => res.json())
-      .then((data) => setMessage(data.message));
-  }, []);
-
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />}/>
-          <Route path="settings" element={<Settings />}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
-export default App;
-
-
-/* BACKUP JOS KUSEE :))
-<div className="App">
+    <div className="App">
       <Box>
-        <ButtonSidebar/>
+        <ButtonAppBar/>
       </Box>
       <Grid className="App">
         <Grid>
@@ -42,11 +19,12 @@ export default App;
             justifyContent: 'space-evenly',
             alignItems: 'center'
           }}>
-            <h1>{message}</h1>
-            <StartButton/>
+            <Button variant='contained' size= "large" color="secondary">Start Server</Button>
           </Box>
         </Grid>
       </Grid>
     </div>
   );
-  */
+}
+
+export default App;
