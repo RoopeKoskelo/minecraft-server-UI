@@ -14,9 +14,21 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import {ThemeProvider} from '@mui/material';
 import theme from'../theme'
+import styled from '@emotion/styled';
 import {BrowserRouter, Route, Link} from "react-router-dom";
 
 const drawerWidth = 240;
+//Ei voi käyttää muuttujana FooterToolbaarissa, joten hardcoded siel
+
+const FooterToolbar = styled(Toolbar)`
+  background-color: #813E00;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  text-align: center;
+`;
+
 
 export default function Sidebar() {
   return (
@@ -47,7 +59,7 @@ export default function Sidebar() {
           anchor="left"
         >
           <Toolbar>
-            <h1>POGOY</h1>
+            <Typography variant='h1'>POGOY</Typography>
           </Toolbar>
           <Divider />
           <List>
@@ -68,6 +80,9 @@ export default function Sidebar() {
                 </ListItemButton>
               </ListItem>
           </List>
+          <FooterToolbar>
+            <Typography variant='h1'>POGOY</Typography>
+          </FooterToolbar>
         </Drawer>
       </Box>
     </ThemeProvider>
