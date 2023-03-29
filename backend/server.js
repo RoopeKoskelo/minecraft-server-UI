@@ -4,38 +4,57 @@ const app = express();
 // viesti reactiin että backend toimii
 app.use(cors());
 app.use(express.json());
+
+var last_state = false;
+
 app.get('/message', (req, res) => {
-    res.json({ message: "Backend päällä" });
+    res.json({ message: last_state ? "Server is running" : "Server is not running" });
 });
 
 //start server nappi
 
+var minecraftProcess;
+var console_messages = [];
+
+app.get('/logs', (req, res) => {
+    res.json({ messages: console_messages });
+});
+
 app.post('/start', async (req, res) => {
+
     let startdata = await req.body.startstate
-    const { spawn, ChildProcess, subprocess } = require('child_process');
-    const minecraftProcess = spawn('java', [
-        '-jar',
-        '-Xmx1024m',
-        '-Xms1024m',
-        'craftbukkit-1060-b1.7.3.jar'
-    ], { detached: true });
 
-    console.log(startdata)
-    res.send("startdata")
+    const { spawn } = require('child_process');
 
-    if(startdata === true){
-        function log(data){
-            process.stdout.write(data.toString());
-        }
-        
-        minecraftProcess.stdout.on('data', log);
-        minecraftProcess.stderr.on('data', log);
-
+    if (last_state == startdata) {
+        const message = last_state ? "Server is already started!!" : "You already stopped the server once!!";
+        return res.json({ message: message, error: true });
     }
-    else if(startdata === false){
-        process.kill(-minecraftProcess.pid)
-        console.log("vittusaatana");
-        return;
+
+    last_state = startdata;
+
+    if(startdata === true) {
+
+        minecraftProcess = spawn('java', [        
+            '-jar',
+            '-Xmx1024m',
+            '-Xms1024m',
+            'server.jar',
+        ], { cwd: 'server' });
+
+        minecraftProcess.stdout.setEncoding('utf8');
+        minecraftProcess.stdout.on('data', (data) => {
+            const text = data.trim();
+            console_messages.push(text);
+            console.log(text);
+        });
+
+        return res.json({ message: 'Started server', error: false });
+    }
+    else if(startdata === false){ 
+        minecraftProcess.stdin.write("stop\n");
+        console.log("shutting down...");
+        return res.json({ message: 'Stopped server', error: false });
     }
 });
 
@@ -45,20 +64,12 @@ app.post('/settings', async (req, res) => {
 
     const propertiesparser = require("properties-parser")
     
-    function parseProperties(){
-        
-        propertiesparser.read('../backend/server.properties', function(error, data){
+    if(req.body.check === true){
+        propertiesparser.read('../backend/server/server.properties', function(error, data){
             console.log(data);
+            return res.json(data);
         })
     }
-    
-
-    let check = await req.body.check
-
-    if(check === true){
-        parseProperties();
-    }
-
 })
 
 app.listen(8000, () => {

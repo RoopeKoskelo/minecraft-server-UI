@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/Home';
 import Layout from './pages/Layout';
 import Settings from './pages/Settings';
+import Console from './pages/Console';
 
 function App() {
   const [message, setMessage] = useState("");
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
           <Route path="settings" element={<Settings />}/>
+          <Route path="console" element={<Console />}/>
         </Route>
       </Routes>
     </BrowserRouter>

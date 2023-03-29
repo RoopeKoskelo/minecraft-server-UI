@@ -19,7 +19,11 @@ export default function StartButton() {
             },
             body: JSON.stringify({startstate})
         })
-        console.log(data)
+
+        const json = await data.json();
+        
+        if (json.error)
+            alert(json.message);
     }
 
     const exitServer = async (event) => {
@@ -35,7 +39,11 @@ export default function StartButton() {
             },
             body: JSON.stringify({startstate})
         })
-        console.log(data)
+        
+        const json = await data.json();
+        
+        if (json.error)
+            alert(json.message);
     }
 
 

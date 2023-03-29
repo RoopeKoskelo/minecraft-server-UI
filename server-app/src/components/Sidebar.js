@@ -79,6 +79,14 @@ export default function Sidebar() {
                   <ListItemText/>
                 </ListItemButton>
               </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton to="/Console">
+                  <ListItemIcon>
+                    <InboxIcon/><ListItemText>Console</ListItemText>
+                  </ListItemIcon>
+                  <ListItemText/>
+                </ListItemButton>
+              </ListItem>
           </List>
           <FooterToolbar>
             <Typography variant='h1'>POGOY</Typography>

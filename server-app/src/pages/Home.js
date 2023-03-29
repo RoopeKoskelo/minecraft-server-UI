@@ -5,11 +5,17 @@ import { Grid, Box } from '@mui/material';
 export default function Home() {
     const [message, setMessage] = useState("");
 
-    useEffect(() => {
+    function loadData() {
         fetch("http://localhost:8000/message")
         .then((res) => res.json())
         .then((data) => setMessage(data.message));
-    }, []);
+    }
+
+    useEffect(() => {
+        setInterval(() => {
+            loadData();
+          }, 1000);
+    });
 
     return (
         <div>

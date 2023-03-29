@@ -19,7 +19,6 @@ export default function Settings() {
             body: JSON.stringify({check})
         })
         console.log(data)
-        check = false;
     }
 
     return (
