@@ -9,15 +9,15 @@ export default function Home() {
         fetch("http://localhost:8000/logs")
         .then((res) => res.json())
         .then((data) => setMessages(data.messages))
-        .catch(err => console.log(err));
+
     }
 
     useEffect(() => {
         setInterval(() => {
             loadData();
+            messagesEndRef.current.scrollIntoView();
           }, 1000);
-        messagesEndRef.current.scrollIntoView();
-    });
+    }, []);
 
     return (
         <div>

@@ -1,14 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-// viesti reactiin että backend toimii
+
 app.use(cors());
 app.use(express.json());
 
 var last_state = false;
 
 app.get('/message', (req, res) => {
-    res.json({ message: last_state ? "Server is running" : "Server is not running" });
+    res.json({ message: last_state ? "Server is running" : "Server is not running" }); // näytä sivulle onko serveri päällä
 });
 
 //start server nappi
@@ -17,7 +17,7 @@ var minecraftProcess;
 var console_messages = [];
 
 app.get('/logs', (req, res) => {
-    res.json({ messages: console_messages });
+    res.json({ messages: console_messages }); // console ikkunan logit /logs sivulle
 });
 
 app.post('/start', async (req, res) => {
@@ -27,7 +27,7 @@ app.post('/start', async (req, res) => {
     const { spawn } = require('child_process');
 
     if (last_state == startdata) {
-        const message = last_state ? "Server is already started!!" : "You already stopped the server once!!";
+        const message = last_state ? "Server is already started!!" : "You already stopped the server once!!"; // heittää alertin jos yrität saman actionin uudestaan
         return res.json({ message: message, error: true });
     }
 
@@ -35,7 +35,7 @@ app.post('/start', async (req, res) => {
 
     if(startdata === true) {
 
-        minecraftProcess = spawn('java', [        
+        minecraftProcess = spawn('java', [      
             '-jar',
             '-Xmx1024m',
             '-Xms1024m',
@@ -43,7 +43,7 @@ app.post('/start', async (req, res) => {
         ], { cwd: 'server' });
 
         minecraftProcess.stdout.setEncoding('utf8');
-        minecraftProcess.stdout.on('data', (data) => {
+        minecraftProcess.stdout.on('data', (data) => {          // tekee console ikkunan logit
             const text = data.trim();
             console_messages.push(text);
             console.log(text);
