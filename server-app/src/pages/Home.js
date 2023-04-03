@@ -14,19 +14,24 @@ export default function Home() {
     return (
         <div>
             <Grid className="App">
-                <Grid>
-                    <Typography variant='header'>Dashboard & Server Info</Typography>
-                    <Box sx={{
-                        display: 'flex',
-                        height: 500,
-                        justifyContent: 'space-evenly',
-                        alignItems: 'center',
-                        ml: '240px'
-                    }}>
-                        <h1>{message}</h1>
+                <Box sx={{
+                    display: 'flex',
+                    height: 500,
+                    justifyContent: 'space-evenly',
+                    alignItems: 'center',
+                    ml: '240px'
+                }}>
+                    <Grid
+                        container
+                        direction="column"
+                        justifyContent="flex-start"
+                        alignItems="stretch"
+                    >
+                        <Typography variant='header'>Dashboard & Server Info</Typography>
+                        <Typography variant='header'>{message}B</Typography>
                         <StartButton/>
-                    </Box>
-                </Grid>
+                    </Grid>
+                </Box>
             </Grid>
         </div>
     );

@@ -10,18 +10,16 @@ const theme = createTheme({
         fontSize: '10'
       },
       header: {
-        textDecoration
-      }
+        color: 'white',
+        align: 'right'
+      },
     },
     palette: {
-      primary: {
-        main: '#76BB74',
-      },
       secondary: {
         main: '#F5F5F5',
       },
-      info: {
-        main: '#FFFFFF'
+      background: {
+        default: '#262C28'
       }
     },
     components: {
