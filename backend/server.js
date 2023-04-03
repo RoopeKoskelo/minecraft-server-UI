@@ -60,16 +60,29 @@ app.post('/start', async (req, res) => {
 
 // server.properties handlaaminen (dear god)
 
-app.post('/settings', async (req, res) => {
+app.get('/getprops', async (req, res) => {
 
     const propertiesparser = require("properties-parser")
     
-    if(req.body.check === true){
+    propertiesparser.read('../backend/server/server.properties', function(error, data){
+        console.log(data);
+        return res.json(data); // returnaa json muodossa server propertiesin
+    })
+})
+
+app.post('/setprops', async (req, res) => {
+
+    const param = req.body.param;
+    const value = req.body.value;
+    
+    const propertiesparser = require("properties-parser")
+
         propertiesparser.read('../backend/server/server.properties', function(error, data){
+            data[param] = value;
             console.log(data);
-            return res.json(data);
+            require('fs').writeFile('../backend/server/server.properties', data);
+            return res.json(data); // returnaa json muodossa server propertiesin
         })
-    }
 })
 
 app.listen(8000, () => {

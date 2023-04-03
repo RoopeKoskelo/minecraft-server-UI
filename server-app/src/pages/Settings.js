@@ -2,24 +2,18 @@ import { React, useState, useEffect } from 'react';
 import { Box, Button } from '@mui/material';
 
 export default function Settings() {
-    let [check, setCheck] = useState(false);
-    
 
-    const checkWork = async (event) => {
-        console.log("starting server...")
-        event.preventDefault()
-        check = true
-        console.log(check)
-        const data = await fetch('http://localhost:8000/settings',{
-            method:'POST',
-            headers:{
-                'accept': 'application/json, text/plain, */*',
-                'Content-Type':'application/json'
-            },
-            body: JSON.stringify({check})
-        })
-        console.log(data)
+    const [properties, setProperties] = useState({});
+
+    function getProperties(){
+        fetch("http://localhost:8000/getprops")
+        .then((res) => res.json())
+        .then((data) => setProperties(data));
     }
+    
+    useEffect(() => {
+        getProperties();
+    }, []);
 
     return (
         <div>
@@ -30,10 +24,7 @@ export default function Settings() {
                 alignItems: 'center',
                 ml: '240px'
             }}>
-                <h1>shittings :D</h1>
-                <Button variant='contained' size= "large" color="secondary" onClick={checkWork}>
-                check work :D
-                </Button>
+                <h1>shittings :D</h1> 
             </Box>
         </div>
     );
