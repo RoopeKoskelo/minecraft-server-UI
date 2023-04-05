@@ -1,9 +1,13 @@
 const express = require('express');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 
 var last_state = false;
 
@@ -65,24 +69,20 @@ app.get('/getprops', async (req, res) => {
     const propertiesparser = require("properties-parser")
     
     propertiesparser.read('../backend/server/server.properties', function(error, data){
-        console.log(data);
         return res.json(data); // returnaa json muodossa server propertiesin
     })
 })
 
 app.post('/setprops', async (req, res) => {
-
-    const param = req.body.param;
-    const value = req.body.value;
     
+    let data = JSON.stringify(req.body);
+    console.log(data)
     const propertiesparser = require("properties-parser")
-
-        propertiesparser.read('../backend/server/server.properties', function(error, data){
-            data[param] = value;
-            console.log(data);
-            require('fs').writeFile('../backend/server/server.properties', data);
-            return res.json(data); // returnaa json muodossa server propertiesin
-        })
+    
+    propertiesparser.parse(data), function(error, data){
+        console.log(newProps)
+    }
+    
 })
 
 app.listen(8000, () => {
