@@ -9,10 +9,15 @@ const theme = createTheme({
         color: 'white',
         fontSize: '10'
       },
-      header: {
+      h4: {
         color: 'white',
-        align: 'right'
+        textDecoration: 'underline',
+        textDecorationColor: '#76BB74'
       },
+      p: {
+        color: 'white',
+        fontSize: 40,
+      }
     },
     palette: {
       secondary: {

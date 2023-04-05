@@ -16,20 +16,38 @@ export default function Home() {
             <Grid className="App">
                 <Box sx={{
                     display: 'flex',
-                    height: 500,
                     justifyContent: 'space-evenly',
                     alignItems: 'center',
-                    ml: '240px'
+                    ml: '240px'/*,
+                    backgroundColor: 'lime'*/
                 }}>
                     <Grid
                         container
+                        padding={10}
                         direction="column"
                         justifyContent="flex-start"
-                        alignItems="stretch"
+                        alignItems="center"
                     >
-                        <Typography variant='header'>Dashboard & Server Info</Typography>
-                        <Typography variant='header'>{message}B</Typography>
+                        <Grid
+                            container
+                            direction='column'
+                            justifyContent= 'flex-start'
+                            alignItems= 'flex-start'
+                        >
+                            <Typography variant='h4'>Dashboard & Server Info</Typography>
+                        </Grid>
+                        <Grid
+                            bgcolor='#A6C990'
+                            paddingY={5}
+                            paddingX={50}
+                            border={4}
+                            borderColor='#ffffff'
+                            borderRadius={15}
+                            marginTop={10}
+                        >
+                        <Typography variant='p'>{message}ServerStatus</Typography>
                         <StartButton/>
+                        </Grid>
                     </Grid>
                 </Box>
             </Grid>
