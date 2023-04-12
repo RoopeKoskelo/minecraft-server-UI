@@ -11,14 +11,20 @@ const theme = createTheme({
       }
     },
     palette: {
+      background: {
+        default: '#262C28'
+      },
       primary: {
-        main: '#76BB74',
+        main: '#76BB74'
       },
       secondary: {
-        main: '#F5F5F5',
+        main: '#F5F5F5'
       },
       info: {
         main: '#FFFFFF'
+      },
+      text: {
+        primary: '#FFFFFF'
       }
     },
     components: {

@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import StartButton from '../components/StartButton';
-import { Grid, Box } from '@mui/material';
+import { Grid, Box, CssBaseline } from '@mui/material';
 
 export default function Home() {
     const [message, setMessage] = useState("");
@@ -19,6 +19,7 @@ export default function Home() {
 
     return (
         <div>
+            <CssBaseline/>
             <Grid className="App">
                 <Grid>
                     <Box sx={{
