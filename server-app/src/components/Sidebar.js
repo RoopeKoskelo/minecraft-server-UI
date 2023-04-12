@@ -15,7 +15,6 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import {ThemeProvider} from '@mui/material';
 import theme from'../theme'
 import styled from '@emotion/styled';
-import {BrowserRouter, Route, Link} from "react-router-dom";
 
 const drawerWidth = 240;
 //Ei voi käyttää muuttujana FooterToolbaarissa, joten hardcoded siel
@@ -59,7 +58,7 @@ export default function Sidebar() {
           anchor="left"
         >
           <Toolbar>
-            <Typography variant='h1'>POGOY</Typography>
+            <Typography variant='h1'>SERVER</Typography>
           </Toolbar>
           <Divider />
           <List>
@@ -89,7 +88,7 @@ export default function Sidebar() {
               </ListItem>
           </List>
           <FooterToolbar>
-            <Typography variant='h1'>POGOY</Typography>
+            <Typography variant='h1'>-</Typography>
           </FooterToolbar>
         </Drawer>
       </Box>

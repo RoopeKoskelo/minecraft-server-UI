@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
 export default function StartButton() {
-    let [startstate, setStartstate] = useState(false);
+    let [startstate ] = useState(false);
     
 
     const startServer = async (event) => {
@@ -55,7 +55,6 @@ export default function StartButton() {
         <Button variant='contained' size= "large" color="secondary" onClick={exitServer}>
             Shutdown Server
         </Button>
-        <h2></h2>
     </Box>
     )
 }

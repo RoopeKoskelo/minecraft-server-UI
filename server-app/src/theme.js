@@ -8,23 +8,23 @@ const theme = createTheme({
       h1: {
         color: 'white',
         fontSize: '10'
+      },
+      h4: {
+        color: 'white',
+        textDecoration: 'underline',
+        textDecorationColor: '#76BB74'
+      },
+      p: {
+        color: 'white',
+        fontSize: 40,
       }
     },
     palette: {
-      background: {
-        default: '#262C28'
-      },
-      primary: {
-        main: '#76BB74'
-      },
       secondary: {
         main: '#F5F5F5'
       },
-      info: {
-        main: '#FFFFFF'
-      },
-      text: {
-        primary: '#FFFFFF'
+      background: {
+        default: '#262C28'
       }
     },
     components: {
