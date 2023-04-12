@@ -45,7 +45,7 @@ export default function Home() {
                             borderRadius={15}
                             marginTop={10}
                         >
-                        <Typography variant='p'>{message}ServerStatus</Typography>
+                        <Typography variant='p'>-{message}-</Typography>
                         <StartButton/>
                         </Grid>
                     </Grid>

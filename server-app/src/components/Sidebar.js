@@ -58,7 +58,7 @@ export default function Sidebar() {
           anchor="left"
         >
           <Toolbar>
-            <Typography variant='h1'>POGOY</Typography>
+            <Typography variant='h1'>SERVER</Typography>
           </Toolbar>
           <Divider />
           <List>
@@ -80,7 +80,7 @@ export default function Sidebar() {
               </ListItem>
           </List>
           <FooterToolbar>
-            <Typography variant='h1'>POGOY</Typography>
+            <Typography variant='h1'>-</Typography>
           </FooterToolbar>
         </Drawer>
       </Box>
