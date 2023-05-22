@@ -9,11 +9,11 @@ export default function Settings() {
     const [properties, setProperties] = useState({});
 
     let propsJSON = JSON.stringify(properties);
-    let newProps = {};
+    let newProps = [];
 
     // hakee server.properties tiedot /getprops rajapinnasta
     function getProperties(){
-        fetch("http://localhost:8000/getprops")
+        fetch("http://localhost:8000/props")
         .then((res) => res.json())
         .then((data) => setProperties(data));
     }
@@ -24,11 +24,12 @@ export default function Settings() {
 
     const sendProperties = async (event) => {
         event.preventDefault()
+        console.log(propsJSON)
         console.log("Saving Properties...")
-        const data = await fetch('http://localhost:8000/setprops',{
+        await fetch('http://localhost:8000/props',{
             method:'POST',
             headers: {
-                'Content-Type': 'application/text'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(newProps)
         });
@@ -50,7 +51,7 @@ export default function Settings() {
                     ml: '240px',
                     backgroundColor: '#FFFFFF',
                 }}>
-                    <JsonEditor jsonObject={propsJSON} onChange={(output)=> {newProps = output; console.log(newProps)}} />
+                    <JsonEditor jsonObject={propsJSON} onChange={(output)=> {newProps = JSON.parse(output); console.log(newProps)}} />
                 </Box>
             </Box>
         </div>

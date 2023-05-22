@@ -21,6 +21,7 @@
     "express": "^4.18.2",
     "kill-port": "^2.0.1",
     "minecraft-server-properties": "^1.0.0",
+    "properties": "^1.2.1",
     "properties-parser": "^0.3.1"
   },
   "devDependencies": {

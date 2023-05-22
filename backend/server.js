@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
+const properties = require("properties");
 
 app.use(cors());
 app.use(express.json());
@@ -64,25 +65,21 @@ app.post('/start', async (req, res) => {
 
 // server.properties handlaaminen (dear god)
 
-app.get('/getprops', async (req, res) => {
-
-    const propertiesparser = require("properties-parser")
-    
-    propertiesparser.read('../backend/server/server.properties', function(error, data){
+app.get('/props', async (req, res) => {  
+    properties.parse('../backend/server/server.properties', { path: true }, function(error, data){
         return res.json(data); // returnaa json muodossa server propertiesin
     })
 })
 
-app.post('/setprops', async (req, res) => {
+app.post('/props', async (req, res) => {   
+    let ndata = req.body;
+    console.log(ndata)
     
-    let data = JSON.stringify(req.body);
-    console.log(data)
-    const propertiesparser = require("properties-parser")
-    
-    propertiesparser.parse(data), function(error, data){
-        console.log(newProps)
-    }
-    
+    properties.stringify(ndata, { path: '../backend/server/server.properties' }, function(error, data){
+        console.log("Saving Properties")
+
+        return ndata
+    })
 })
 
 app.listen(8000, () => {

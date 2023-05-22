@@ -7,14 +7,6 @@ import Settings from './pages/Settings';
 import Console from './pages/Console';
 
 function App() {
-  const [ setMessage ] = useState("");
-
-  useEffect(() => {
-    fetch("http://localhost:8000/message")
-      .then((res) => res.json())
-      .then((data) => setMessage(data.message));
-  }, []);
-
   return (
     <BrowserRouter>
       <Routes>
