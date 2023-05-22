@@ -33,6 +33,7 @@ export default function Settings() {
             },
             body: JSON.stringify(newProps)
         });
+        window.location.reload(false);
     }
 
     return (
