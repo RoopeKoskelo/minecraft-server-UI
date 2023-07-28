@@ -1,5 +1,5 @@
 import { React, useState, useEffect, useRef } from 'react';
-import { Grid, Box } from '@mui/material';
+import { Grid, Box, TextField } from '@mui/material';
 
 export default function Home() {
     const [messages, setMessages] = useState([]);
@@ -33,13 +33,22 @@ export default function Home() {
                     color: '#FFFFFF',
                     borderRadius: 4,
                     overflowY: 'scroll',
-                }}>
+                }}
+                noValidate
+                autoComplete="off">
                     {
                         messages.map((item) => {
                             return <p>{item}</p>
                         })
                     }
                     <div ref={messagesEndRef} />
+                    <TextField 
+                    fullWidth
+                    focused
+                    id="standard-basic"  
+                    color="secondary" 
+                    label="Enter Command Here" 
+                    variant="standard" />
                 </Box>
             </Box>
         </div>
