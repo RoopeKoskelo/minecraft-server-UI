@@ -32,8 +32,6 @@ Hyvä parser server-propertiesiin: [linkki](https://www.npmjs.com/package/proper
 <details><summary>User Interface 🖥</summary>
 <p>
 
-(vaiheessa)
-
 Vaaditut välilehdet:
 
 - Profiilit
@@ -66,10 +64,30 @@ Vaaditut välilehdet:
 
 </p>
 </details>
+<details><summary> Julkiset tunnukset👤</summary>
+<p>
 
-## Graafinen Ohjeisto
- Figma linkki: 
- [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
+- Site: aternos.org
+    - User: POGOY_
+    - Password: salpauskala1234
+
+- Site: minehut.com
+    - User: e1337junkthirst@outlook.com
+    - Password: Salpauskala1234
+    </p>
+    </details>
+<details><summary>Graafinen Ohjeisto🎨</summary>
+    <p>
+ Figma linkki: [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
+ 
+kuva graaffisesta ohjeistosta default teemasta
+ 
+ 
+ 
+        
+<img width="203" alt="yeb" src="https://user-images.githubusercontent.com/113332670/225261246-3caf4db3-bd04-464a-a8fc-86ce6125e523.png">
+    </p>
+    </details>
 
 ## Ohjeet kehitykseen
 
@@ -103,13 +121,5 @@ Vasen sarake on asetus jota muokataan, oikea sarake on muutettava kenttä
 | spawn-monsters | true |
 | . . . | . . . |
 
-## Julkiset tunnukset
 
-- Site: aternos.org
-    - User: POGOY_
-    - Password: salpauskala1234
-
-- Site: minehut.com
-    - User: e1337junkthirst@outlook.com
-    - Password: Salpauskala1234
 
