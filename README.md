@@ -43,6 +43,9 @@ Vaaditut välilehdet:
     - Plavelimen nimi, IP
     - Käynnistys & sammutus, pilvitallennus
     - Terminaali
+    
+- Serverin asetukset
+    - pelaajalista
 
 - Peli asetukset
     - Configien muokkaus, (~~cfg~~, yml, properties. . .)
