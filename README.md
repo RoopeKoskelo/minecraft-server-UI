@@ -1,6 +1,6 @@
 # MineservuPOGOY
 
-Käyttöliittymä Minecraft-serverille, joka tehtiin osittain kouluprojektina ja enimmäkseen harrasteprojektina.
+Käyttöliittymä Minecraft-serverille, joka tehtiin osittain kouluprojektina ja enimmäkseen harraste-/sivuprojektina.
 Alapuolelta löydät vanhat dokumentaatiot, joita ei välttämättä ole päivitetty ajan tasalle.
 
 Jatkan projektia enimmäkseen muistona Sisulle, joka oli kanssani tekemässä projektia.
