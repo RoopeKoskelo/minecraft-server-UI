@@ -21,13 +21,9 @@
 Ideana olisi tehä käyttöliittymä minecraft-serverille, josta voi käynnistää ja sammuttaa serverin, muokata configeja ja käyttää console terminaalia.
 Käytetään Reactia, mahdollisesti erillisenä sovelluksena eikä vain nettisivuna.
 
-
-Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/getting-started/overview/),
-
-Backendissä myös Express ja CORS.
-
-Hyvä parser server-propertiesiin: [linkki](https://www.npmjs.com/package/properties)
-
+Lisätään Reactin kylkeen Material UI: [linkki](https://mui.com/material-ui/getting-started/overview/)
+</p>
+</details>
 
 <details><summary>User Interface 🖥</summary>
 <p>
@@ -41,9 +37,6 @@ Vaaditut välilehdet:
     - Plavelimen nimi, IP
     - Käynnistys & sammutus, pilvitallennus
     - Terminaali
-    
-- Serverin asetukset
-    - pelaajalista
 
 - Peli asetukset
     - Configien muokkaus, (~~cfg~~, yml, properties. . .)
@@ -103,7 +96,7 @@ MUISTA KÄYTTÄÄ OMAA BRANCHIA!
 
 ## /server-files/
 
-Väliaikaisesti kansioon on asetettu b1.7.3 versio minecraft, joka on tarpeeksi kevyt lokaaliseen testaukseen. Käytössä on craftbukkit server, jossa on enemmän configeja kuin vanillassa joita löytyy myös nyky versioissa joilla voimme testata.
+Väliaikaisesti kansioon on asetettu 1.8.8 versio minecraft, joka on tarpeeksi kevyt lokaaliseen testaukseen. Käytössä on craftbukkit server, jossa on enemmän configeja kuin vanillassa joita löytyy myös nyky versioissa joilla voimme testata.
 
 Palvelinta ei ole muokattu muuten kuin .properties asetuksista `online-mode=false`, jotta sinne voi mahdollisesti yhdistää.
 
@@ -123,3 +116,4 @@ Vasen sarake on asetus jota muokataan, oikea sarake on muutettava kenttä
 
 
 
+Testi
