@@ -48,11 +48,11 @@ export default function StartButton() {
 
 
     return(
-    <Box display='flex'>
-        <Button variant='contained' size= "large" color="secondary" onClick={startServer}>
+    <Box display='flex' sx={{p: 4}}>
+        <Button variant='contained' size= "large" color="secondary" onClick={startServer} sx={{mr: 5}}>
             Start Server
         </Button>
-        <Button variant='contained' size= "large" color="secondary" onClick={exitServer}>
+        <Button variant='contained' size= "large" color="secondary" onClick={exitServer} sx={{ml: 5}}>
             Shutdown Server
         </Button>
     </Box>

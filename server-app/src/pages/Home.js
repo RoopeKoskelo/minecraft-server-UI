@@ -49,7 +49,7 @@ export default function Home() {
                             paddingX={50}
                             border={4}
                             borderColor='#ffffff'
-                            borderRadius={15}
+                            borderRadius={10}
                             marginTop={10}
                         >
                         <Typography variant='p'>-{message}-</Typography>

@@ -15,6 +15,9 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import {ThemeProvider} from '@mui/material';
 import theme from'../theme'
 import styled from '@emotion/styled';
+import grassblock from '../img/GrassBlock.png';
+import obsidian from '../img/Obsidian.png';
+import commandblock from '../img/CommandBlock.jpg';
 
 const drawerWidth = 240;
 //Ei voi käyttää muuttujana FooterToolbaarissa, joten hardcoded siel
@@ -32,17 +35,17 @@ const FooterToolbar = styled(Toolbar)`
 export default function Sidebar() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Box sx={{
         display: 'flex',
         '& .MuiDrawer-paper': {
           bgcolor: theme.palette.primary.header,
         },
       }}>
-        <CssBaseline />
         <AppBar
           position="fixed"
           sx={{
-            width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px`}}
+            width: `240px`}}
         >
         </AppBar>
         <Drawer
@@ -58,37 +61,28 @@ export default function Sidebar() {
           anchor="left"
         >
           <Toolbar>
-            <Typography variant='h1'>SERVER</Typography>
+            <Typography variant='h1'>Server</Typography>
           </Toolbar>
           <Divider />
           <List>
               <ListItem disablePadding>
                 <ListItemButton to="/">
-                  <ListItemIcon>
-                    <InboxIcon/><ListItemText>Server Home</ListItemText>
-                  </ListItemIcon>
-                  <ListItemText/>
+                  <img src={grassblock} width={50}/><ListItemText sx={{ml: '20px'}}>Server</ListItemText>
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton to="/Settings">
-                  <ListItemIcon>
-                    <InboxIcon/><ListItemText>Server Settings</ListItemText>
-                  </ListItemIcon>
-                  <ListItemText/>
+                  <img src={obsidian} width={50}/><ListItemText sx={{ml: '20px'}}>Options</ListItemText>
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton to="/Console">
-                  <ListItemIcon>
-                    <InboxIcon/><ListItemText>Console</ListItemText>
-                  </ListItemIcon>
-                  <ListItemText/>
+                  <img src={commandblock} width={50}/><ListItemText sx={{ml: '20px'}}>Console</ListItemText>
                 </ListItemButton>
               </ListItem>
           </List>
           <FooterToolbar>
-            <Typography variant='h1'>-</Typography>
+            <Typography variant='h1'></Typography>
           </FooterToolbar>
         </Drawer>
       </Box>

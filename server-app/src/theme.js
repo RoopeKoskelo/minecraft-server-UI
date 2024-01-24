@@ -4,10 +4,10 @@ import '@fontsource/roboto/700.css';
 const theme = createTheme({
     typography: {
       fontFamily: 'Roboto',
-      fontSize: 18,
+      fontSize: 20,
       h1: {
         color: 'white',
-        fontSize: '10'
+        fontSize: '8'
       },
       h4: {
         color: 'white',
@@ -20,6 +20,11 @@ const theme = createTheme({
       }
     },
     palette: {
+      primary: {
+        main: '#76BB74',
+        text: 'white',
+        header: '#85ABE4'
+      },
       secondary: {
         main: '#F5F5F5'
       },
@@ -32,13 +37,6 @@ const theme = createTheme({
         styleOverrides: {
           root: {
             color: 'white'
-          }
-        }
-      },
-      MuiPaper: {
-        styleOverrides: {
-          root: {
-            backgroundColor: '#5E62D8',
           }
         }
       },
