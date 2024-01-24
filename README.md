@@ -1,5 +1,11 @@
 # MineservuPOGOY
 
+Käyttöliittymä Minecraft-serverille, joka tehtiin osittain kouluprojektina ja enimmäkseen harrasteprojektina.
+Alapuolelta löydät vanhat dokumentaatiot, joita ei välttämättä ole päivitetty ajan tasalle.
+
+
+# Vanha README
+
 <details><summary>Roolit📋</summary>
 <p>
 
@@ -8,9 +14,6 @@
 **Scrum Masterit:** Sisu, Roope
 
 **Graphic Design:** Joona
-
-**TBD:** Luca, Jeppe, Vilma
-
 
 </p>
 </details>
@@ -57,18 +60,6 @@ Vaaditut välilehdet:
 
 </p>
 </details>
-<details><summary> Julkiset tunnukset👤</summary>
-<p>
-
-- Site: aternos.org
-    - User: POGOY_
-    - Password: salpauskala1234
-
-- Site: minehut.com
-    - User: e1337junkthirst@outlook.com
-    - Password: Salpauskala1234
-    </p>
-    </details>
 <details><summary>Graafinen Ohjeisto🎨</summary>
     <p>
  Figma linkki: [linkki](https://www.figma.com/file/NlAroBf94llBcbEIy2aRMo/Main?node-id=0-1&t=4V9glkCriVS3VKvS-0)
