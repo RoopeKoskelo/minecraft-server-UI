@@ -1,5 +1,4 @@
-# MineservuPOGOY
-
+# Minecraft Server UI 
 Käyttöliittymä Minecraft-serverille, joka tehtiin osittain kouluprojektina ja enimmäkseen harraste-/sivuprojektina.
 Alapuolelta löydät vanhat dokumentaatiot, joita ei välttämättä ole päivitetty ajan tasalle.
 
