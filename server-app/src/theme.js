@@ -1,5 +1,6 @@
 import { createTheme } from '@mui/material';
 import '@fontsource/roboto/700.css';
+import dirtbg from './img/Dirt_background.png';
 
 const theme = createTheme({
     typography: {
@@ -28,9 +29,9 @@ const theme = createTheme({
       secondary: {
         main: '#F5F5F5'
       },
-      background: {
-        default: '#262C28'
-      }
+//      background: {
+//        default: '#262C28'
+//      }
     },
     components: {
       MuiListItemText: {
@@ -40,10 +41,17 @@ const theme = createTheme({
           }
         }
       },
+      MuiCssBaseline: {
+        styleOverrides: {
+          body: {
+            backgroundImage: `url(${dirtbg})`,
+          }
+        }
+      },
       MuiToolbar: {
         styleOverrides: {
           root: {
-            backgroundColor: '#76BB74',
+            backgroundColor: '#76BB74'
           }
         }
       }

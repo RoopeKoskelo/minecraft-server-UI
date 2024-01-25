@@ -18,6 +18,8 @@ import styled from '@emotion/styled';
 import grassblock from '../img/GrassBlock.png';
 import obsidian from '../img/Obsidian.png';
 import commandblock from '../img/CommandBlock.jpg';
+import sky from '../img/skytexture.jpg';
+import btn1 from '../img/btn1.png';
 
 const drawerWidth = 240;
 //Ei voi käyttää muuttujana FooterToolbaarissa, joten hardcoded siel
@@ -40,12 +42,15 @@ export default function Sidebar() {
         display: 'flex',
         '& .MuiDrawer-paper': {
           bgcolor: theme.palette.primary.header,
+          backgroundImage:`url(${sky})`,
+          backgroundPositionX: '55%',
+          backgroundPositionY: '-90%'
         },
       }}>
         <AppBar
           position="fixed"
           sx={{
-            width: `240px`}}
+            width: `240px`,}}
         >
         </AppBar>
         <Drawer
@@ -67,17 +72,17 @@ export default function Sidebar() {
           <List>
               <ListItem disablePadding>
                 <ListItemButton to="/">
-                  <img src={grassblock} width={50}/><ListItemText sx={{ml: '20px'}}>Server</ListItemText>
+                  <img src={grassblock} width={50}/><ListItemText sx={{ml: 2, textAlign: 'center', boxShadow: 4, backgroundImage: `url(${btn1})`, backgroundSize: 'fit', backgroundPosition: 'center' }}>Server</ListItemText>
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton to="/Settings">
-                  <img src={obsidian} width={50}/><ListItemText sx={{ml: '20px'}}>Options</ListItemText>
+                  <img src={obsidian} width={50}/><ListItemText sx={{ml: 2, textAlign: 'center', boxShadow: 4, backgroundImage: `url(${btn1})`, backgroundSize: 'fit', backgroundPosition: 'center'}}>Options</ListItemText>
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton to="/Console">
-                  <img src={commandblock} width={50}/><ListItemText sx={{ml: '20px'}}>Console</ListItemText>
+                  <img src={commandblock} width={50}/><ListItemText sx={{ml: 2, textAlign: 'center', boxShadow: 4, backgroundImage: `url(${btn1})`, backgroundSize: 'fit', backgroundPosition: 'center'}}>Console</ListItemText>
                 </ListItemButton>
               </ListItem>
           </List>

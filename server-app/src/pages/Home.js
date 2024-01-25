@@ -51,6 +51,7 @@ export default function Home() {
                             borderColor='#ffffff'
                             borderRadius={10}
                             marginTop={10}
+                            boxShadow={20}
                         >
                         <Typography variant='p'>-{message}-</Typography>
                         <StartButton/>
