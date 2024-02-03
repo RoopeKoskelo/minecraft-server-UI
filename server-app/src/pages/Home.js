@@ -46,15 +46,15 @@ export default function Home() {
                         <Grid
                             bgcolor='#A6C990'
                             paddingY={5}
-                            paddingX={50}
+                            paddingX={'25%'}
                             border={4}
                             borderColor='#ffffff'
                             borderRadius={10}
                             marginTop={10}
                             boxShadow={20}
                         >
-                        <Typography variant='p'>-{message}-</Typography>
-                        <StartButton/>
+                            <Typography variant='p'>-{message}-</Typography>
+                            <StartButton/>
                         </Grid>
                     </Grid>
                 </Box>
