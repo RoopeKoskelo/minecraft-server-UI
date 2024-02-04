@@ -43,8 +43,7 @@ export default function Sidebar() {
         '& .MuiDrawer-paper': {
           bgcolor: theme.palette.primary.header,
           backgroundImage:`url(${sky})`,
-          backgroundPositionX: '55%',
-          backgroundPositionY: '-90%'
+          backgroundRepeat: 'repeat',
         },
       }}>
         <AppBar
