@@ -64,6 +64,14 @@ app.post('/start', async (req, res) => {
     }
 });
 
+app.post('/console', async (req, res) => {
+    let input = await req.body.value
+    console.log(input);
+
+    minecraftProcess.stdin.write(`${input}\n`)
+    return res.json({ message: 'Command entered.'})
+})
+
 // server.properties handlaaminen (dear god)
 
 app.get('/props', async (req, res) => {  
