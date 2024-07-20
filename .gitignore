@@ -105,3 +105,5 @@ dist
 
 # server file
 backend/server
+
+#why is this gitignore not working if this useless comment fixes it i will cry
