@@ -103,7 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
-# server file
+# server files
 backend/server
+#server-app/server
 
 #why is this gitignore not working if this useless comment fixes it i will cry

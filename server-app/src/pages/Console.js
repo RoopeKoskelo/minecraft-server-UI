@@ -75,7 +75,8 @@ export default function Home() {
                             variant="standard"
                             value={value}
                             onChange={(e)=>setValue(e.target.value)} 
-                            sx={{ input: {color: '#FFFFFF'}}}/>
+                            sx={{ input: {color: 'white'}}}
+                            inputRef={input => input && input.focus()}/>
                     </form>
                 </Box>
             </Box>
